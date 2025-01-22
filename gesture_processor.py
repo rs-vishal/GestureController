@@ -1,17 +1,17 @@
 import cv2
 import mediapipe as mp
 from gui import get_active_mode
-from mouse_control import process_mouse_movement
+from mouse_control import process_mouse_movement_and_scroll
 from media_control import process_media_gestures
 from ppt_control import process_ppt_gestures
 
-hand_detector = mp.solutions.hands.Hands()
+hand_detector = mp.solutions.hands.Hands()  
 drawing_utils = mp.solutions.drawing_utils
 
 def process_gestures(frame, landmarks, mode):
     frame_height, frame_width, _ = frame.shape
 
-    process_mouse_movement(frame_width, frame_height, landmarks)
+    process_mouse_movement_and_scroll(frame_width, frame_height, landmarks)
 
     if mode == "PPT":
         process_ppt_gestures(landmarks, frame_width, frame_height)
