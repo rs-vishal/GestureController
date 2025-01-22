@@ -13,7 +13,6 @@ def process_gestures(frame, landmarks, mode):
 
     process_mouse_movement(frame_width, frame_height, landmarks)
 
-    # Process gestures based on the active mode
     if mode == "PPT":
         process_ppt_gestures(landmarks, frame_width, frame_height)
     elif mode == "Media":

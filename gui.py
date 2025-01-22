@@ -1,8 +1,7 @@
 import tkinter as tk
 from tkinter import messagebox
 
-# Global variable for active mode
-active_mode = "Mouse"  # Default mode
+active_mode = "Mouse" 
 
 def switch_mode(mode):
     global active_mode

@@ -6,6 +6,6 @@ def process_media_gestures(landmarks, frame_width, frame_height):
     thumb_y = landmarks[4].y * frame_height
 
     if thumb_y - index_y > gesture_threshold:
-        pyautogui.press("volumeup")  # Increase volume
+        pyautogui.press("volumeup")  
     elif index_y - thumb_y > gesture_threshold:
-        pyautogui.press("volumedown")  # Decrease volume
+        pyautogui.press("volumedown") 
