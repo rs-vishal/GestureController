@@ -8,9 +8,9 @@ from ppt_control import process_ppt_gestures
 hand_detector = mp.solutions.hands.Hands()  
 drawing_utils = mp.solutions.drawing_utils
 
-def process_gestures(frame, landmarks, mode):
+def process_gestures(frame, landmarks, mode): #processing gesture
     frame_height, frame_width, _ = frame.shape
-
+     
     process_mouse_movement_and_scroll(frame_width, frame_height, landmarks)
 
     if mode == "PPT":
