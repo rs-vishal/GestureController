@@ -1,3 +1,4 @@
+#mouse_control.py
 import pyautogui
 
 prev_index_x, prev_index_y = 0, 0 

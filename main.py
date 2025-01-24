@@ -1,3 +1,4 @@
+#main.py
 from threading import Thread
 from gui import start_gui
 from gesture_processor import run_gesture_controller
