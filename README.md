@@ -49,16 +49,20 @@ Follow these steps to set up and run GestureController locally:
 1. **Start the Application**
    ```bash
      python main.py
+   
 2.**Interact with the System**
   The application will launch and access your webcam, displaying a live video feed.
    Perform the predefined hand gestures in front of the camera.
    The system will recognize the gesture and execute the corresponding command.
+   
 3.**Customization**
   To modify the gesture-to-command mappings, edit the configuration sections in the source code as needed.
 
 ## Acknowledgements
  MediaPipe: For providing robust real-time hand tracking solutions.
+ 
  OpenCV: For powerful image processing and computer vision capabilities.
+ 
  PyAutoGUI: For enabling seamless automation of system commands.
   
 
