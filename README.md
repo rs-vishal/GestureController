@@ -45,7 +45,7 @@ Follow these steps to set up and run GestureController locally:
    ```bash
      pip install -r requirements.txt
 
-##Usage
+## Usage
 1. **Start the Application**
    ```bash
      python main.py
@@ -56,7 +56,7 @@ Follow these steps to set up and run GestureController locally:
 3.**Customization**
   To modify the gesture-to-command mappings, edit the configuration sections in the source code as needed.
 
-##Acknowledgements
+## Acknowledgements
  MediaPipe: For providing robust real-time hand tracking solutions.
  OpenCV: For powerful image processing and computer vision capabilities.
  PyAutoGUI: For enabling seamless automation of system commands.
